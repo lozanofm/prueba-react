@@ -1,14 +1,23 @@
 import  "./Navbar.css"
+import CartWidget from "../CartWidget/CartWidget"
+import logotipo from './assets/logotipo.jpg'
+
 
 const Navbar = () => {
     return(
         <nav class="navbar bg-primary">
+            <img src={logotipo} alt='logotipo'/>
+            <h4>Inicio</h4>
             
-            <h1>Crossfit</h1>
+            
+            
+            
             <div>
-                <button>Celulares</button>
+                <button>Calzado</button>
+                <button>Accesorios</button>
+                <button>Vestimenta</button>
             </div>
-
+            <CartWidget/>
         </nav>
 
     )
